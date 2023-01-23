@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Myanmar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyleEng.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body onload="autochg();">
+    <script>
+        let arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
+        let names = ["kachin.jpg", "kayah.jpg", "kayin.jpg", "chin.jpg", "mon.jpeg", "rakaine.png", "shan.jpeg", "yangon.jpg", "mandalay.jpg", "sagaing.jpg", "ayeyarwady.jpg", "bago.jpg", "magway.jpg", "tanintharyi.jpg"];
+
+        let arr1 = document.getElementsByClassName("text");
+        let i = 0,
+            j = 0,
+            c = 0,
+            d = 0;
+
+
+        let chBg = () => {
+            i++;
+            if (i == names.length) {
+                i = 0;
+
+            }
+            imgGroup.src = "image/all/" + names[i];
+
+        }
+        let chgtext = () => {
+                j++;
+                if (j == arr1.length) {
+                    j = 0;
+                }
+                for (c = 0; c < arr1.length; c++) {
+                    arr1[c].classList.remove("seek");
+                    arr1[c].classList.add("hide");
+
+                }
+                arr1[j].classList.remove("hide");
+                arr1[j].classList.add("seek");
+                // textgroup.style.animation="chgshape 0.1s linear";
+                document.getElementById("textgroup").classList.add('classname');
+                document.getElementById("imgGroup").classList.add('classname2');
+
+            }
+            //  let anigp=()=>{
+            // for(d=0;d<arr1.length;d++){	
+            // document.getElementById("icover").classList.add('classname');	
+            //  }
+            //  }
+        let autochg = () => {
+            setInterval(chBg, 3500);
+            setInterval(chgtext, 3500);
+            // setInterval(anigp,2000);//  ဒီမှာ သတိထားဖို့က functionname ပဲ ()မပါဘူး
+        }
+    </script>
+    <!-- for Ban -->
+    <div class="ban">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="banner">မင်္ဂလာပါ ချစ်ဆွေတို့ရာ ... လှမ်းလာခဲ့ပါ ပြည်မြန်မာ ! </h1>
+
+    </div>
+
+    <!-- for link  -->
+    <div class="link">
+        <a class="aLink activeColor color1" href="indexInEng.html"><i class="bi bi-house-fill"></i></a> <span class="tab"></span>
+        <a class="aLink unactiveColor color2" href="yangonInEng.html">Yangon</a> <span class="tab"></span>
+        <a class="aLink unactiveColor color3" href="mandalayInEng.html">Mandalay </a> <span class="tab"></span>
+        <a class="aLink unactiveColor color4" href="baganInEng.html">Bagan</a> <span class="tab"></span>
+        <a class="aLink " href="#pagodaLink" id="up"><i class="bi bi-file-earmark-arrow-down-fill downColor"></i></a>
+        <a id="lan" href="index.html">မြန်မာဘာသာ</a>
+    </div>
+    <div class="spaceblock"></div>
+
+    <div class="bannerImgGp">
+        <div class="textgp" id="textgroup">
+            <!-- <div class="tcover" id="icover"></div>	 -->
+            <div class="text t14 seek" id="i14">
+                <h3>Kachin State</h3>
+                <p>Kachin State (Burmese: ကချင်ပြည်နယ်; Kachin: Jinghpaw Mungdaw), also known by the endonym Kachinland, is the northernmost state of Myanmar. It is bordered by China to the north and east (Tibet and Yunnan, specifically and respectively);
+                    Shan State to the south; and Sagaing Region and India (Arunachal Pradesh) to the west. The capital of the state is Myitkyina.Kachin State has Myanmar's highest mountain, Hkakabo Razi (5,889 metres (19,321ft)), forming the southern
+                    tip of the Himalayas, and a large inland lake, Indawgyi Lake. </p>
+            </div>
+            <div class="text t13 hide" id="i3">
+                <h3>Kayah State</h3>
+                <p>Kayah State (Burmese: ကယားပြည်နယ်, pronounced[kəjá pjìnɛ̀] formerly Karenni State) is a state of Myanmar. Situated in eastern Myanmar, it is bounded on the north by Shan State, on the east by Thailand's Mae Hong Son Province, and on the
+                    south and west by Kayin State.Its capital is Loikaw (also spelt Loi-kaw). The estimated population in 1998 was approximately 207,357, according to UNICEF. It is inhabited primarily by the Karenni ethnic group, also known as Red Karen[3]
+                    or Kayah, a Sino-Tibetan people. </p>
+            </div>
+            <div class="text t12 hide" id="i12">
+                <h3>Kayin State</h3>
+                <p>Kayin State (Burmese: ကရင်ပြည်နယ်, pronounced[kəjɪ̀ɴ pjìnɛ̀]; Eastern Pwo: ဖၠုံခါန်ႋကၞင့်; S'gaw Karen: ကညီကီၢ်စဲၣ်, pronounced[kɲɔkɔshæ]), also known by the endonyms Kawthoolei and Karen State, is a state of Myanmar. The capital city
+                    is Hpa-An, also spelled Pa-An. The relief of Karen State is mountainous with the Dawna Range running along the state in a NNW - SSE direction and the southern end of the Karen Hills in the northwest.It is bordered by Mae Hong Son,
+                    Tak, and Kanchanaburi provinces of Thailand to the east; Mon State and Bago Region to the west and south; Mandalay Region, Shan State and Kayah State to the north. </p>
+            </div>
+            <div class="text t11 hide" id="i11">
+                <h3>Chin State</h3>
+                <p>Chin State (Burmese: ချင်းပြည်နယ်; MLCTS: hkyang: pranynai, pronounced [tɕʰɪ́ɰ̃ pjìnɛ̀]) is a state in western Myanmar. The capital of the state is Hakha. The state is a mountainous region with few transportation links. Chin State has
+                    the highest poverty rate of 73% as per the released figures from the first official survey.There are 53 different subtribes and languages in Chin State. There are nine townships in Chin State: Hakha, Thantlang, Falam, Tedim, Tonzang,
+                    Matupi, Mindat, Kanpetlet and Paletwa townships.</p>
+            </div>
+            <div class="text t10 hide" id="i10">
+                <h3>Mon State</h3>
+                <p>Mon State (Burmese: မွန်ပြည်နယ်, pronounced [mʊ̀ɴ pjìnɛ̀]; Mon: တွဵုရးဍုင်မန်) is an administrative division of Myanmar. It lies between Kayin State to the east, the Andaman Sea to the west, Bago Region to the north and Tanintharyi Region
+                    to the south, also having a short border with Thailand's Kanchanaburi Province at its south-eastern tip. The land area is 12,155km2 (4,693sqmi). Mon State includes some small islands, such as Kalegauk, Wa Kyun and Kyungyi Island, along
+                    its 566km (352mi) of coastline. The state's capital is Mawlamyine. </p>
+            </div>
+            <div class="text t9 hide" id="i7">
+                <h3>Rakhine State</h3>
+                <p>Rakhine State (/rəˈkaɪn/ (listen); Burmese: ရခိုင်ပြည်နယ်; MLCTS: ra.hkuing pranynai, Rakhine pronunciation [ɹəkʰàiɰ̃ pɹènè], Burmese pronunciation:[jəkʰàiɰ̃ pjìnɛ̀]; formerly known as Arakan State) is a state in Myanmar (Burma).The Arakan
+                    Mountains or Rakhine Yoma separated Rakhine State from central Burma from North to South. Off the coast of Rakhine State there are some fairly large islands such as Ramree, Cheduba and Myingun. Rakhine State has an area of 36,762 square
+                    kilometres (14,194sqmi) and its capital is Sittwe.[4] </p>
+            </div>
+            <div class="text t8 hide" id="i8">
+                <h3>Shan State</h3>
+                <p>Shan State (Burmese: ရှမ်းပြည်နယ်, pronounced [ʃáɰ̃ pjìnɛ̀]; Shan: မိူင်းတႆး) also known by the endonyms Shanland, Muang Tai, and Tailong,is a state of Myanmar. The largest of the 14 administrative divisions by land area, Shan State covers
+                    155,800km2, almost a quarter of the total area of Myanmar. The state gets its name from Burmese name for the Tai peoples: "Shan people". Shanland is largely rural, with only three cities of significant size: Lashio, Kengtung, and the
+                    capital, Taunggyi. Taunggyi is 150.7km northeast of the nation's capital Naypyitaw</p>
+            </div>
+            <div class="text t7 hide " id="i7">
+                <h3>Yangon Region</h3>
+                <p>Yangon Region[4][5](Burmese: ရန်ကုန်တိုင်းဒေသကြီး; MLCTS: rankun tuing desa. kri:, pronounced [jàɰ̃ɡòʊɰ̃ táɪɰ̃ dèθa̰ dʑí]; formerly Rangoon Division and Yangon Division) is an administrative region of Myanmar. Located in the heart of Lower
+                    Myanmar, the division is bordered by Bago Region to the north and east, the Gulf of Martaban to the south, and Ayeyarwady Region to the west.The division is the most developed region of the country and the main international gateway.</p>
+            </div>
+            <div class="text t6 hide" id="i6">
+                <h3>Mandalay Region</h3>
+                <p>Mandalay Region (Burmese: မန္တလေးတိုင်းဒေသကြီး, pronounced [máɰ̃dəlé táiɰ̃ dèθa̰ dʑí]; formerly Mandalay Division) is an administrative division of Myanmar. It is located in the center of the country, bordering Sagaing Region and Magway
+                    Region to the west, Shan State to the east, and Bago Region and Kayin State to the south. The regional capital is Mandalay. The division consists of eleven districts,which are subdivided into 28 townships and 2,320 wards and village-tracts.
+                </p>
+            </div>
+            <div class="text t5 hide" id="i5">
+                <h3>Sagaing Region</h3>
+                <p>Sagaing Region (Burmese: စစ်ကိုင်းတိုင်းဒေသကြီး, pronounced [zəɡáɪ̯ɰ̃ táɪ̯ɰ̃ dèθa̰ dʑí]; formerly Sagaing Division) is an administrative region of Myanmar, located in the north-western part of the country between latitude 21° 30' north
+                    and longitude 94° 97' east. The region has an area of 93,527 square kilometres (36,111sqmi).The urban population in 2012 was 1,230,000 and the rural population was 5,360,000. The capital city of Sagaing Region is Monywa. </p>
+            </div>
+            <div class="text t4 hide" id="i4">
+                <h3>Ayeyarwady Region</h3>
+                <p>Ayeyarwady Region (Burmese: ဧရာဝတီတိုင်းဒေသကြီး [ʔèjàwədì táiɰ̃ dèθa̰ dʑí], S'gaw Karen: ထံထၣ်စွ့, Western Pwo: ထံၫထၪကျိၩ့; formerly Ayeyarwady Division and Irrawaddy Division), is a region of Myanmar, occupying the delta region of the
+                    Ayeyarwady River (Irrawaddy River).The estimated 2022 population is more than 6.5 million. According to the 2014 Burmese National Census the population of the Ayeyarwady Region was 6,184,829, making it the second most populous of Burma's
+                    states and regions after Yangon Region. </p>
+            </div>
+            <div class="text t3 hide" id="i3">
+                <h3>Bago Reion</h3>
+                <p>Bago Region (Burmese: ပဲခူးတိုင်းဒေသကြီး, pronounced [bəɡó táɪɰ̃ dèθa̰ dʑí]; formerly Pegu Division and Bago Division) is an administrative region of Myanmar, located in the southern central part of the country. It is bordered by Magway
+                    Region and Mandalay Region to the north; Kayin State, Mon State and the Gulf of Martaban to the east; Yangon Region to the south and Ayeyarwady Region and Rakhine State to the west. It is located between 46°45'N and 19°20'N and 94°35'E
+                    and 97°10'E. It has a population of 4,867,373 (2014). </p>
+            </div>
+            <div class="text t2 hide" id="i2">
+                <h3>Magway Region</h3>
+                <p>Magway Region (Burmese: မကွေးတိုင်းဒေသကြီး, pronounced [məɡwé táiɰ̃ dèθa̰ dʑí]; formerly Magway Division) is an administrative division in central Myanmar. It is the second largest of Myanmar's seven divisions, with an area of 44,820km2
+                    (17,306 square miles). The capital and second largest city of the Magway Division is Magway. The largest city is Pakokku. The major cities of Magway Division are Magway, Pakokku, Aunglan, Yenangyaung, Taungdwingyi, Chauk, Minbu, Thayet
+                    and Gangaw. </p>
+            </div>
+            <div class="text t1 hide" id="i1">
+                <h3>Tanintharyi Region</h3>
+                <p>Tanintharyi Region (Burmese: တနင်္သာရီတိုင်းဒေသကြီး, pronounced [tənɪ́ɰ̃θàjì táɪɰ̃ dèθa̰ dʑí]; Mon: ဏၚ်ကသဳ or ရးတၞင်သြဳ; Malay: Tanah Sari; formerly Tenasserim Division and subsequently Tanintharyi Division, Thai: ตะนาวศรี, RTGS: Tanao
+                    Si, pronounced [tənaːw sǐː]; formerly known as Tanao Si) is an administrative region of Myanmar, covering the long narrow southern part of the country on the upper Malay peninsula, reaching to the Kra Isthmus.There are many islands
+                    off the coast, the large Mergui Archipelago in the southern and central coastal areas and the smaller Moscos Islands off the northern shores. The capital of the division is Dawei (Tavoy). </p>
+            </div>
+        </div>
+        <img src="image/all/kachin.jpg" alt="" id="imgGroup">
+    </div>
+
+
+
+
+    <!-- for aside -->
+    <div class="main">
+
+        <aside class="board">
+            <h3 id="overviewLink" class="subtitle">
+                <div class="left"></div>&nbsp;&nbsp;Myanmar&nbsp;&nbsp;
+                <div class="right"></div>
+            </h3>
+            <p class="pSize2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Myanmar,[a] officially the Republic of the Union of Myanmar,[b] also known as Burma (the official name until 1989), is a country in Southeast Asia. It is the largest country by area in Mainland Southeast Asia,
+                and has a population of about 54 million as of 2017.[10] Myanmar is bordered by Bangladesh and India to its northwest, China to its northeast, Laos and Thailand to its east and southeast, and the Andaman Sea and the Bay of Bengal to its
+                south and southwest. The country's capital city is Naypyidaw, and its largest city is Yangon (Rangoon). Early civilisations in the area included the Tibeto-Burman-speaking Pyu city-states in Upper Myanmar and the Mon kingdoms in Lower
+                Myanmar.[11] In the 9th century, the Bamar people entered the upper Irrawaddy valley, and following the establishment of the Pagan Kingdom in the 1050s, the Burmese language, culture, and Theravada Buddhism slowly became dominant in the
+                country. The Pagan Kingdom fell to Mongol invasions, and several warring states emerged. In the 16th century, reunified by the Taungoo dynasty, the country became the largest empire in the history of Southeast Asia for a short period.
+                The early 19th-century Konbaung dynasty ruled over an area that included modern Myanmar and briefly controlled Manipur and Assam as well. The British East India Company seized control of the administration of Myanmar after three Anglo-Burmese
+                Wars in the 19th century, and the country became a British colony. After a brief Japanese occupation, Myanmar was reconquered by the Allies and gained independence in 1948. Following a coup d'état in 1962, it became a military dictatorship
+                under the Burma Socialist Programme Party. </p>
+
+            <div id="geographyLink">
+                <h3 id="overviewLink" class="subtitle">
+                    <div class="left"></div>&nbsp;&nbsp;Geography&nbsp;&nbsp;
+                    <div class="right"></div>
+                </h3>
+                <p class="pSize2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the north, the Hengduan Mountains form the border with China. Hkakabo Razi, located in Kachin State, at an elevation of 5,881 metres (19,295 ft), is the highest point in Myanmar.[157] Many mountain ranges,
+                    such as the Rakhine Yoma, the Bago Yoma, the Shan Hills and the Tenasserim Hills exist within Myanmar, all of which run north-to-south from the Himalayas.[158] The mountain chains divide Myanmar's three river systems, which are the
+                    Irrawaddy, Salween (Thanlwin), and the Sittaung rivers.[159] The Irrawaddy River, Myanmar's longest river at nearly 2,170 kilometres (1,348 mi), flows into the Gulf of Martaban. Fertile plains exist in the valleys between the mountain
+                    chains.[158] The majority of Myanmar's population lives in the Irrawaddy valley, which is situated between the Rakhine Yoma and the Shan Plateau. It is bounded by Laos and Thailand to the southeast. Myanmar has 1,930 km (1,200 mi)
+                    of contiguous coastline along the Bay of Bengal and Andaman Sea to the southwest and the south, which forms one quarter of its total perimeter </p>
+                <div class="geo">
+                    <img src="image/myan/map1.jpg" class="geoImg" alt="">
+                    <img src="image/myan/map2.jpg" class="geoImg" alt="">
+                </div>
+                <h3 id="overviewLink" class="subtitle">
+                    <div class="left"></div>&nbsp;&nbsp;Location And Area&nbsp;&nbsp;
+                    <div class="right">
+                </h3>
+                <p class="pSize2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Myanmar has a total area of 678,500 square kilometres (262,000 sq mi). It lies between latitudes 9° and 29°N, and longitudes 92° and 102°E. Myanmar is bordered in the northwest by the Chittagong Division of
+                    Bangladesh and the Mizoram, Manipur, Nagaland and Arunachal Pradesh states of India. Its north and northeast border is with the Tibet Autonomous Region and Yunnan for a Sino-Myanmar border total of 2,185 km (1,358 mi). It is bounded
+                    by Laos and Thailand to the southeast. Myanmar has 1,930 km (1,200 mi) of contiguous coastline along the Bay of Bengal and Andaman Sea to the southwest and the south, which forms one quarter of its total perimeter.In the north, the
+                    Hengduan Mountains form the border with China. Hkakabo Razi, located in Kachin State, at an elevation of 5,881 metres (19,295 ft), is the highest point in Myanmar.[157] Many mountain ranges, such as the Rakhine Yoma, the Bago Yoma,
+                    the Shan Hills and the Tenasserim Hills exist within Myanmar, all of which run north-to-south from the Himalayas.[158] The mountain chains divide Myanmar's three river systems, which are the Irrawaddy, Salween (Thanlwin), and the Sittaung
+                    rivers.[159] The Irrawaddy River, Myanmar's longest river at nearly 2,170 kilometres (1,348 mi), flows into the Gulf of Martaban. Fertile plains exist in the valleys between the mountain chains.[158] The majority of Myanmar's population
+                    lives in the Irrawaddy valley, which is situated between the Rakhine Yoma and the Shan Plateau. </p>
+
+
+
+                <div class="forPagoda">
+                    <div class="upperlayer pagoda1">
+                        <h3 class="inUpper">
+                            <div class="highlight">KyaiKtiYo Pagoda</div>
+                        </h3>
+                    </div>
+
+                    <div class="upperlayer pagoda2">
+                        <h3 class="inUpper">
+                            <div class="highlight">BawBawGyi Pagoda</div>
+                        </h3>
+                    </div>
+
+                    <div class="upperlayer pagoda3">
+                        <h3 class="inUpper">
+                            <div class="highlight">NaGaYone Pagoda</div>
+                        </h3>
+                    </div>
+                </div>
+
+
+                <h2 class="famousCities">Famous Pagodas</div>
+                </h2>
+
+                <div class="forPagoda">
+                    <div class="upperlayer pagoda4">
+                        <h3 class="inUpper">
+                            <div class="highlight">MyatSawNyiNaung Pagoda</div>
+                        </h3>
+                    </div>
+
+                    <div class="upperlayer pagoda5">
+                        <h3 class="inUpper">
+                            <div class="highlight">KyaiPawLawMahtShiTaw Pagoda</div>
+                        </h3>
+                    </div>
+
+                    <div class="upperlayer pagoda6">
+                        <h3 class="inUpper">
+                            <div class="highlight">ShweSanTaw Pagoda</div>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <p class="pSize2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burmese pagodas are stupas that typically house Buddhist relics, including relics associated with Buddha. Pagodas feature prominently in Myanmar's landscape, earning the country the moniker "land of pagodas."
+                    According to 2016 statistics compiled by the State Sangha Maha Nayaka Committee, Myanmar is home to 1,479 pagodas exceeding 27 feet (8.2m) in height, a quarter of which are located in Sagaing Region. Several cities in the country,
+                    including Mandalay and Bagan, are known for their abundance of pagodas. Pagodas are the site of seasonal pagoda festivals. Burmese pagodas are enclosed in a compound known as the aran (အာရာမ်, from Pali ārāma), with gateways called
+                    mok (မုခ်, from Pali mukha) at the four cardinal directions. The platform surrounding a Burmese pagoda is called a yinbyin (ရင်ပြင်).In the Burmese language, pagodas are known by a number of various terms. The umbrella term phaya (ဘုရား,
+                    pronounced [pʰəjá]), which derives from Sanskrit vara, refers to pagodas, images of the Buddha, as well as royal and religious personages, including the Buddha, kings, and monks.Zedi (စေတီ), which derives from Pali cetiya, specifically
+                    refers to typically solid, bell-shaped stupas that may house relics. Pahto (ပုထိုး) refers to hollow square or rectangular buildings built to resemble caves, with chambers that house images of the Buddha. Burmese pagodas are distinguished
+                    from kyaungs in that the latter are monasteries that house Buddhist monks.According to legend, the Gautama Buddha visited Dhanyawadi, the capital city of Arakan during his travels on a missionary mission to spread Buddhism.[7] During
+                    the 26th anniversary of the King at the time, a devout Buddhist, the Buddha accompanied by Shin Ananda and 500 disciples[7] landed at Salagiri mountain peak near Khaukrah town.[8] The King of Arakan, along with his Chief Queen Sandra
+                    Mala (with her retinue of 1,600 ladies in waiting), and an entourage of ministers, generals and officials, paid homage to the Buddha.[8] They were deeply moved by his teachings and upon his departure to Thawuthi (Sravasti), the King
+                    insisted that he leave his image for people to worship.[8] For this purpose, the Buddha then sat under a Bodhi tree for a week of meditation.[8] During this time Sakka (in Pāli, the ruler of the Tavatimsa, in sanskrit called Trāyastriṃśa)
+                    one of the heavens in Buddhist cosmology, supported by his assistant Vissakamma (or Vishvakarman), moulded a lifelike image of the Buddha using ornaments donated by the king and his people.[8] It is also said that Sakka and Vissakamma
+                    created a separate pavilion for the Buddha to live and enjoy during these seven days.[8] After looking at his own lifelike image, believed at the time to have been his only true-likeness,[9] Buddha was pleased and "imbued the image
+                    with his spiritual essence", or "enlivened and consecrated" the image, naming it "Candasara".[2] He also stated that the image would last for five thousand years as his representative.</p>
+
+
+                <h4 class="pagodaTitle">Mahamuni Buddha Temple, Mandalay</h4>
+                <br><br>
+                <div class="aboutPagodas">
+                    <img src="image/myan/maharmuni.jpg" class="img1" alt="">
+                    <p class="pSize1">
+                        The Mahamuni Buddha Temple (Burmese: မဟာမုနိဘုရားကြီး, Burmese pronunciation:[məhà mṵnḭ pʰəjádʑí]) is a Buddhist temple and major pilgrimage site, located southwest of Mandalay, Myanmar (Burma).The Mahamuni Image (lit.'The Great Sage') is enshrined in
+                        this temple, and originally came from Arakan. It is highly venerated in Burma and central to many people's lives, as it is seen as an expression of representing the Buddha's life.Ancient tradition refers to only five likenesses
+                        of the Buddha made during his lifetime; two were in India, two in paradise, and the fifth is the Mahamuni Image in Myanmar.Legend holds that the Buddha himself visited the Dhanyawadi city of Arakan in 554 BC.King Sanda Thuriya
+                        requested that an image be cast of him. Once complete, the Buddha breathed upon it, and thereafter the image took on his exact likenessAccording to legend, the Gautama Buddha visited Dhanyawadi, the capital city of Arakan during
+                        his travels on a missionary mission to spread Buddhism.During the 26th anniversary of the King at the time, a devout Buddhist, the Buddha accompanied by Shin Ananda and 500 disciples landed at Salagiri mountain peak near Khaukrah
+                        town.The King of Arakan, along with his Chief Queen Sandra Mala (with her retinue of 1,600 ladies in waiting), and an entourage of ministers, generals and officials, paid homage to the Buddha.They were deeply moved by his teachings
+                        and upon his departure to Thawuthi (Sravasti), the King insisted that he leave his image for people to worship. For this purpose, the Buddha then sat under a Bodhi tree for a week of meditation. During this time Sakka (in Pāli,
+                        the ruler of the Tavatimsa, in sanskrit called Trāyastriṃśa) one of the heavens in Buddhist cosmology, supported by his assistant Vissakamma (or Vishvakarman), moulded a lifelike image of the Buddha using ornaments donated by the
+                        king and his people.It is also said that Sakka and Vissakamma created a separate pavilion for the Buddha to live and enjoy during these seven days.After looking at his own lifelike image, believed at the time to have been his only
+                        true-likeness, Buddha was pleased and "imbued the image with his spiritual essence", or "enlivened and consecrated" the image, naming it "Candasara".[2] He also stated that the image would last for five thousand years as his representative.</a>
+                    </p>
+
+                </div>
+                <br><br>
+                <h4 class="pagodaTitle">Shwezigon Pagoda , Bagan </h4>
+                <br><br>
+                <div class="aboutPagodas">
+                    <img src="image/myan/shwesikhone.jpg" class="img1" alt="">
+                    <p class="pSize1"> The Shwezigon Pagoda or Shwezigon Paya (ရွှေစည်းခုံဘုရား [ɕwèzíɡòʊɰ̃ pʰəjá]) is a Buddhist stupa located in Nyaung-U, Myanmar. A prototype of Burmese stupas, it consists of a circular gold leaf-gilded stupa surrounded by smaller temples
+                        and shrines. Construction of the Shwezigon Pagoda began during the reign of King Anawrahta (r. 1044–1077), the founder of the Pagan Empire, in 1059–1060 and was completed in 1102, during the reign of his son King Kyansittha. Over
+                        the centuries the pagoda had been damaged by many earthquakes and other natural calamities, and has been refurbished several times. In recent renovations it has been covered by more than 30,000 copper plates. However, the lowest
+                        level terraces have remained as they were. This pagoda, a sacred Buddhist religious place, is believed to enshrine a bone and tooth of Gautama Buddha. The pagoda is in the form of a cone formed by five square terraces with a central
+                        solid core. There are footprints below the four standing Buddha statues here. Jataka legends are depicted on glazed terra-cotta tiles set into three rectangular terraces. At the entrance of the pagoda there are large statues of
+                        guardians of the temple. There are also four bronze standing statues of Buddha which are stated to be of the current age Buddha. At the outer limits of the pagoda there are 37 nats deified along with an intricately carved wooden
+                        sculpture of Thagyamin, Burmese version of Indian god Indra. Within the compound of the Shwezigon Pagoda there is a stone pillar containing Mon language inscriptions dedicated by Kyansittha. </a>
+                    </p>
+
+                </div>
+                <br><br>
+                <h4 class="pagodaTitle">Shwedagon Pagoda, Yangon</h4>
+                <br><br>
+                <div class="aboutPagodas">
+                    <img src="image/myan/shwetakhone.jpg" class="img1" alt="">
+                    <p class="pSize1"> The Shwedagon Pagoda (Burmese: ရွှေတိဂုံဘုရား; MLCTS: hrwe ti. gum bhu. ra:, IPA: [ʃwèdəɡòʊɰ̃ pʰəjá]); Mon: ကျာ်ဒဂုၚ်; officially named Shwedagon Zedi Daw (Burmese: ရွှေတိဂုံစေတီတော်, [ʃwèdəɡòʊɰ̃ zèdìdɔ̀], lit. 'Golden Dagon Pagoda')
+                        and also known as the Great Dagon Pagoda and the Golden Pagoda is a gilded stupa located in Yangon, Myanmar. The Shwedagon is the most sacred Buddhist pagoda in Myanmar, as it is believed to contain relics of the four previous
+                        Buddhas of the present kalpa. These relics include the staff of Kakusandha, the water filter of Koṇāgamana, a piece of the robe of Kassapa, and eight strands of hair from the head of Gautama.[2] Built on the 51-metre (167ft) high
+                        Singuttara Hill, the 112m (367ft) tall pagoda stands 170m (560ft) above sea level,[note 1] and dominates the Yangon skyline. Yangon's zoning regulations, which cap the maximum height of buildings to 127 metres (417 feet) above
+                        sea level (75% of the pagoda's sea level height), ensure the Shwedagon's prominence in the city's skyline.ccording to tradition, the Shwedagon Pagoda was constructed more than 2,500 years ago, which would make it the oldest Buddhist
+                        stupa in the world.[4] The story goes that two merchant brothers Tapussa and Bhallika met the Gautama Buddha during his lifetime and received eight strands of the Buddha's hairs. The brothers presented the eight strands of hair
+                        to King Okkalapa of Dagon who enshrined the strands along with some relics of the three preceding Buddhas of the Gautama Buddha in a stupa on the Singuttara Hill in present-day Myanmar.[5] Scene upon the terrace of the Great Dagon
+                        Pagoda, 1824–1826 The first mention of the pagoda in the royal chronicles dates only to 1362/63 CE (724 ME) when King Binnya U of Martaban–Hanthawaddy raised the pagoda to 18m (59ft). Contemporary inscriptional evidence, the Shwedagon
+                        Pagoda Inscriptions from the reign of King Dhammazedi of Hanthawaddy (r. 1471–1492), shows a list of repairs of the pagoda going back to 1436. In particular, Queen Shin Saw Pu (r. 1454–1471) raised its height to 40m (130ft), and
+                        gilded the new structure. By the beginning of the 16th century, Shwedagon Pagoda had become the most famous Buddhist pilgrimage site in Burma. </a>
+                    </p>
+
+                </div>
+
+
+
+                <h2 id="pagodaLink" class="famousCities">Famous Places</h2>
+
+                <div class="imggroup">
+                    <div class="cover1 geoImg1">
+                        <h4 class="inCover">U Bein Bridge</h4>
+                    </div>
+                    <div class="cover2 geoImg1">
+                        <h4 class="inCover">MyaTaLon Pagoda</h4>
+                    </div>
+                </div>
+
+                <div class="imggroup">
+                    <div class="cover3 geoImg1">
+                        <h4 class="inCover">Mount Popa</h4>
+                    </div>
+                    <div class="cover4 geoImg1">
+                        <h4 class="inCover">Inlay Lake</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <h2 class="famousCities">Famous Cities</h2>
+
+
+    <!-- for link paragraph -->
+    <div class="para">
+        <div class="citiesContainer"><img src="image/ygn/landscape/ygn.jpg" alt="" class="pImg">
+            <p class="pSize">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yangon (Burmese: ရန်ကုန်; pronounced [jàɰ̃ɡòʊɰ̃ mjo̰]; lit.'End of Strife'), formerly spelled as Rangoon, is the capital of the Yangon Region and the largest city of Myanmar (also known as Burma). Yangon served
+                as the capital of Myanmar until 2006, when the military government relocated the administrative functions to the purpose-built capital city of Naypyidaw in north central Myanmar.With over 7 million people, Yangon is Myanmar's most populous
+                city and its most important commercial centre. Yangon boasts the largest number of colonial-era buildings in Southeast Asia,and has a unique colonial-era urban core that is remarkably intact.&nbsp;&nbsp;<a href="yangonInEng.html" class="inpara">see more...</a></p>
+        </div>
+        <div class="citiesContainer"><img src="image/mdy/landscape/moat.jpg" alt="" class="pImg">
+            <p class="pSize">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mandalay was founded in 1857 by King Mindon, replacing Amarapura as the new royal capital of the Konbaung dynasty. It was Burma's final royal capital before the kingdom's annexation by the British Empire in 1885.
+                Under British rule, Mandalay remained commercially and culturally important despite the rise of Yangon, the new capital of British Burma. The city suffered extensive destruction during the Japanese conquest of Burma in the Second World
+                War. In 1948, Mandalay became part of the newly independent Union of Burma. <a href="mandalayInEng.html" class="inpara">see more ...</a></p>
+        </div>
+
+        <div class="citiesContainer"><img src="image/bag/landscape/bag.jpg" alt="" class="pImg">
+            <p class="pSize">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bagan (Burmese: ပုဂံ; MLCTS: pu.gam, IPA: [bəɡàɰ̃]; formerly Pagan) is an ancient city and a UNESCO World Heritage Site in the Mandalay Region of Myanmar.[1] From the 9th to 13th centuries, the city was the capital
+                of the Bagan Kingdom, the first kingdom that unified the regions that would later constitute Myanmar. During the kingdom's height between the 11th and 13th centuries, more than 10,000 Buddhist temples, pagodas and monasteries were constructed
+                in the Bagan plains alone,[2] of which the remains of over 2200 temples and pagodas survive.The Bagan Archaeological Zone is a main attraction for the country's nascent tourism industry. <a href="baganInEng.html" class="inpara">see more ...</a></p>
+        </div>
+    </div>
+
+    <!-- for footer -->
+
+    <div class="footer">
+
+        <a href="tel:+959259833893" class="contact" class="ph"><i class="bi bi-telephone-inbound-fill"></i>&nbsp;&nbsp;&nbsp;+959259833893</a><br>
+        <a href="sms:+959793033893" class="contact" class="sms"><i class="bi bi-chat-right-text-fill"></i>&nbsp;&nbsp;&nbsp;+959793033893 </a><br>
+        <a href="mailto:welcometomynammar@gmail.com" class="contact" class="mail"><i class="bi bi-telephone-inbound-fill"></i>&nbsp;&nbsp;&nbsp;welcometomyanmar@gmail.com</a><br>
+        <a href="https://en.wikipedia.org/wiki/Myanmar?msclkid=17199714a6bb11ec9b63bc10fe4d682f" class="contact" class="copy"><i class="bi bi-c-circle-fill"></i> &nbsp;&nbsp;&nbsp;wikipedia</a>
+        <div class="forSNS">
+            <a href="https://www.facebook.com"><img class="fb" src="image/footer/facebook.jpg" alt=""></a>
+            <a href="https://www.twitter.com"><img class="fb" src="image/footer/twitter.png" alt=""></a>
+            <a href="https://www.instagram.com"><img class="fb" src="image/footer/instagram.png" alt=""></a>
+            <a href="https://www.pinterest.com"><img class="fb" src="image/footer/pinterest.png" alt=""></a>
+            <a href="https://www.telegram.com"><img class="fb" src="image/footer/telegram.png" alt=""></a>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
